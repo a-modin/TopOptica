@@ -2,13 +2,33 @@ $(document).ready(function() {
 
 
 	$('.left-nav-2').click(function() {
-		$('.left-nav-2').removeClass('left-nav-closed');
-		$('.left-nav-2').not(this).addClass('left-nav-closed');
-		$('.left-nav-closed ul').hide(500);
-		$('.left-nav-2 span').css('color', '#a6a9ab');
-		$(this).find('span').css('color', 'white');
-		$(this).find('ul').toggle(500);
+		var toggleOptons = {
+			duration: 300,
+			easing: 'swing'
+		}
 		
+		$('.left-nav-2').not(this).removeClass('left-nav-opened');
+		$('.left-nav-2').not(this).removeClass('left-nav-closed');
+		$('.left-nav-2').not(this).addClass('left-nav-closed');
+
+		if ($(this).hasClass('left-nav-closed')) {
+			$(this).removeClass('left-nav-closed');
+			$(this).addClass('left-nav-opened');
+			$(this).find('ul').toggle(toggleOptons);
+		}
+		else if ($(this).hasClass('left-nav-opened')){
+			$(this).removeClass('left-nav-opened');
+			$(this).addClass('left-nav-closed');
+		}
+		else{
+			$(this).addClass('left-nav-opened');
+			$(this).find('ul').toggle(toggleOptons);
+		}
+
+		$('.left-nav-closed ul').hide(300);
+		
+
+
 	});
 
 });

@@ -20,6 +20,9 @@
 .main .sidebar .left-navigation ul li ul .left-nav-2 {
   margin-top: 10px;
 }
+.main .sidebar .left-navigation ul li ul .left-nav-opened span {
+  color: white;
+}
 .main .sidebar .left-navigation ul li ul li span {
   text-transform: uppercase;
   color: #a6a9ab;
@@ -64,15 +67,21 @@ body {
 }
 .top .nav {
   background: #525e65;
-  padding-top: 25px;
 }
 .top .nav ul {
   list-style: none;
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .top .nav ul li {
   float: left;
-  margin: 10px;
+  margin: 0 0px;
   display: block;
+  height: 100%;
+  padding: 35px 20px;
+  transition: background 0.25s ease-out;
 }
 .top .nav ul li a {
   color: #a6a9ab;
@@ -88,8 +97,8 @@ body {
 .top .nav ul li .active {
   color: white;
 }
-.top .nav ul li:first-child {
-  margin-left: -10px;
+.top .nav ul li:hover {
+  background-color: #1e2f33;
 }
 .top .contacts {
   background: #1e2f33;

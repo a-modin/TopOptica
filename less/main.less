@@ -19,15 +19,20 @@ body{
 
 	.nav{
 		background: @color3;
-		padding-top: 25px;
 
 		ul{
 			list-style: none;
+			display: block;
+			height: 100%;
+			margin: 0;
+			padding: 0;
 
 			li{
 				float: left;
-				margin: 10px;
+				margin: 0 0px;
 				display: block;
+				height: 100%;
+				padding: 35px 20px;
 
 				a{
 					color: @color4;
@@ -47,13 +52,23 @@ body{
 					        transition: color .25s ease-out;
 				}
 
+				-webkit-transition: background .25s ease-out;
+				   -moz-transition: background .25s ease-out;
+				    -ms-transition: background .25s ease-out;
+				     -o-transition: background .25s ease-out;
+				        transition: background .25s ease-out;
+
 				.active{
 					color: @white
+				}
+
+				&:hover{
+					background-color: @color1;
 				}
 			}
 
 			li:first-child{
-				margin-left: -10px;
+
 			}
 		}
 	}
