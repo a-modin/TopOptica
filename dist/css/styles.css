@@ -1,0 +1,181 @@
+body {
+  background: url('../images/back.png');
+  background-repeat: repeat;
+}
+.top .logo,
+.top .nav,
+.top .contacts {
+  height: 90px;
+}
+.top .logo {
+  background: url('../images/logo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dd9e6f;
+}
+.top .nav {
+  background: #525e65;
+  padding-top: 25px;
+}
+.top .nav ul {
+  list-style: none;
+}
+.top .nav ul li {
+  float: left;
+  margin: 10px;
+  display: block;
+}
+.top .nav ul li a {
+  color: #a6a9ab;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+}
+.top .nav ul li a:hover {
+  color: white;
+}
+.top .nav ul li .active {
+  color: white;
+}
+.top .nav ul li:first-child {
+  margin-left: -10px;
+}
+.top .contacts {
+  background: white;
+}
+.main .sidebar {
+  background: #1e2f33;
+  height: 1255px;
+}
+.main .sidebar .left-nav {
+  margin-top: 30px;
+}
+.main .sidebar .left-nav ul {
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+.main .sidebar .left-nav ul li {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.main .sidebar .left-nav ul li a {
+  text-transform: uppercase;
+  color: #a6a9ab;
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+}
+.main .sidebar .left-nav ul li a:hover {
+  color: white;
+}
+.main .sidebar .left-nav ul li ul {
+  margin-top: 10px;
+}
+.main .sidebar .left-nav ul li ul li {
+  font-size: 12px;
+}
+.main .sidebar .left-nav ul li ul li a {
+  color: #a6a9ab;
+}
+.main .content {
+  padding: 0;
+  background: white;
+}
+.main .content .popular {
+  background: white;
+}
+.main .content .popular .product-wrapper {
+  float: left;
+  width: 33.3333%;
+  height: 400px;
+  margin: 0px;
+  padding: 10px;
+}
+.main .content .popular .product-wrapper .product {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1e2f33;
+}
+.main .content .popular .product-wrapper .product img {
+  width: 100%;
+}
+.main .content .popular .product-wrapper .product h2,
+.main .content .popular .product-wrapper .product h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 0;
+}
+.main .content .popular .product-wrapper .product h2 {
+  font-size: 19px;
+  color: black;
+}
+.main .content .popular .product-wrapper .product h3 {
+  font-size: 15px;
+  color: #525e65;
+}
+.main .content .popular .product-wrapper .product button {
+  width: 100%;
+  height: 40px;
+  margin-top: 42px;
+  border: 0;
+  background-color: #1e2f33;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  transition: background 0.25s ease-out;
+}
+.main .content .popular .product-wrapper .product button:hover {
+  background: #dd9e6f;
+}
+.footer {
+  background: #525e65;
+  height: 100px;
+}
+.main .content .slider {
+  background: white;
+  margin: 0;
+}
+.main .content .slider .slider-wrapper {
+  width: 100%;
+  height: 400px;
+}
+.main .content .slider .slider-wrapper .slide {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  opacity: 0;
+}
+.main .content .slider .slider-wrapper .slide img {
+  width: 100%;
+}
+.main .content .slider ul.pagination li {
+  display: block;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+.main .content .slider ul.pagination .active {
+  background: red;
+}
+h1 {
+  color: black;
+  font-size: 27px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+h2 {
+  color: black;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+h3 {
+  color: black;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
