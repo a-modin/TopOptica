@@ -1,6 +1,71 @@
 .main .content .slider{
+	position: relative;
 	background: @white;
 	margin:0;
+
+	.slider-but-left, .slider-but-left-hover{
+		width: 50px;
+		height: 50px;
+		background: url('../images/slider/sprites.png');
+		position: absolute;
+		top: 200px;
+		left: 20px;
+	}
+
+	.slider-but-left{
+		background-position: 0px;
+		z-index: 200;
+
+	}
+
+	.slider-but-left-hover{
+		background-position: -50px;
+		z-index: 1111;
+		opacity: 0;
+		cursor: pointer;
+
+		-webkit-transition: opacity .40s ease-out;
+		   -moz-transition: opacity .40s ease-out;
+		    -ms-transition: opacity .40s ease-out;
+		     -o-transition: opacity .40s ease-out;
+		        transition: opacity .40s ease-out;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	.slider-but-right, .slider-but-right-hover{
+		width: 50px;
+		height: 50px;
+		background: url('../images/slider/sprites.png');
+		position: absolute;
+		top: 200px;
+		right: 20px;
+	}
+
+	.slider-but-right{
+		background-position: -100px;
+		z-index: 200;
+
+	}
+
+	.slider-but-right-hover{
+		background-position: -150px;
+		z-index: 1111;
+		opacity: 0;
+		cursor: pointer;
+
+		-webkit-transition: opacity .40s ease-out;
+		   -moz-transition: opacity .40s ease-out;
+		    -ms-transition: opacity .40s ease-out;
+		     -o-transition: opacity .40s ease-out;
+		        transition: opacity .40s ease-out;
+
+		&:hover{
+			opacity: 1;
+		}
+	}
 
 	.slider-wrapper{
 		width: 100%;
@@ -36,11 +101,11 @@
 			-webkit-border-radius: 15px;
 			border-radius: 15px;
 
-			-webkit-transition: background .10s ease-out;
-			   -moz-transition: background .10s ease-out;
-			    -ms-transition: background .10s ease-out;
-			     -o-transition: background .10s ease-out;
-			        transition: background .10s ease-out;
+			-webkit-transition: background .40s ease-out;
+			   -moz-transition: background .40s ease-out;
+			    -ms-transition: background .40s ease-out;
+			     -o-transition: background .40s ease-out;
+			        transition: background .40s ease-out;
 
 			&:hover{
 				background: @color3;

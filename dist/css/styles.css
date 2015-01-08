@@ -171,8 +171,55 @@ body {
   height: 100px;
 }
 .main .content .slider {
+  position: relative;
   background: white;
   margin: 0;
+}
+.main .content .slider .slider-but-left,
+.main .content .slider .slider-but-left-hover {
+  width: 50px;
+  height: 50px;
+  background: url('../images/slider/sprites.png');
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+.main .content .slider .slider-but-left {
+  background-position: 0px;
+  z-index: 200;
+}
+.main .content .slider .slider-but-left-hover {
+  background-position: -50px;
+  z-index: 1111;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.4s ease-out;
+}
+.main .content .slider .slider-but-left-hover:hover {
+  opacity: 1;
+}
+.main .content .slider .slider-but-right,
+.main .content .slider .slider-but-right-hover {
+  width: 50px;
+  height: 50px;
+  background: url('../images/slider/sprites.png');
+  position: absolute;
+  top: 200px;
+  right: 20px;
+}
+.main .content .slider .slider-but-right {
+  background-position: -100px;
+  z-index: 200;
+}
+.main .content .slider .slider-but-right-hover {
+  background-position: -150px;
+  z-index: 1111;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.4s ease-out;
+}
+.main .content .slider .slider-but-right-hover:hover {
+  opacity: 1;
 }
 .main .content .slider .slider-wrapper {
   width: 100%;
@@ -201,7 +248,7 @@ body {
   cursor: pointer;
   border: 1px solid #525e65;
   border-radius: 15px;
-  transition: background 0.1s ease-out;
+  transition: background 0.4s ease-out;
 }
 .main .content .slider ul.pagination li:hover {
   background: #525e65;
