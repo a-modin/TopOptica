@@ -6,8 +6,8 @@ $(document).ready(function() {
 		this.pagination = [];
 		this.active = 0;
 		this.auto = true;
-		this.interval = 1000;
-		this.intervalAfterStop = 5000;
+		this.interval = 3000;
+		this.intervalAfterStop = 6000;
 		this.stopped = false;
 
 		this.__defineGetter__('slidesAmount', function(){
@@ -141,14 +141,4 @@ $(document).ready(function() {
 		s1.next();
 		
 	});
-
-	$('#but3').click(function() {
-		s1.autoPlay()
-	});
-
-	var render = function(){
-		requestAnimationFrame(render)
-	}
-
-	render()
 });

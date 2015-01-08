@@ -60,7 +60,14 @@ body{
 		
 	
 	.contacts{
-		background: @white;
+		background: @color1;
+			
+		h2{
+			color: @white;
+			font-size: 15px;
+			text-align: center;
+			margin-top: 17px;
+		}
 	}
 }
 
@@ -69,49 +76,6 @@ body{
 	.sidebar{
 		background: @color1;
 		height: 1255px;
-
-		.left-nav{
-			margin-top: 30px;
-
-			ul{
-				margin-top: 30px;
-				list-style: none;
-				padding: 0;
-
-				li{
-					margin-left: 10px;
-					font-size: 14px;
-
-					a{
-						text-transform: uppercase;
-						color: @color4;
-						text-decoration: none;
-
-						&:hover{
-							color: @white;
-						}
-
-						-webkit-transition: color .25s ease-out;
-						   -moz-transition: color .25s ease-out;
-						    -ms-transition: color .25s ease-out;
-						     -o-transition: color .25s ease-out;
-						        transition: color .25s ease-out;
-					}
-
-					ul{
-						margin-top: 10px;
-
-						li{
-							font-size: 12px;
-
-							a{
-								color: @color4
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 
 	.content{
@@ -119,6 +83,7 @@ body{
 		background: @white;
 
 		.popular{
+			margin-top: 50px;
 			background: @white;
 
 			.product-wrapper{
@@ -126,6 +91,7 @@ body{
 				width: 33.3333%;
 				height: 400px;
 				margin: 0px;
+				margin-top: 30px;
 				padding: 10px;
 
 				.product{
