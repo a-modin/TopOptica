@@ -167,13 +167,13 @@ $(document).ready(function() {
 	s1.init();
 
 
-	$('#but1').click(function() {
+	$('#butLeft').click(function() {
 		s1.stop();
 		s1.prev();
 		
 	});
 
-	$('#but2').click(function() {
+	$('#butRight').click(function() {
 		s1.stop();
 		s1.next();
 		

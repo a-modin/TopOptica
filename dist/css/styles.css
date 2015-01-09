@@ -10,7 +10,7 @@
   text-transform: uppercase;
   color: white;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 .main .sidebar .left-navigation ul li ul {
   list-style: none;
@@ -27,7 +27,7 @@
   text-transform: uppercase;
   color: #a6a9ab;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   cursor: pointer;
   transition: color 0.25s ease-out;
 }
@@ -40,7 +40,6 @@
   margin-left: 10px;
 }
 .main .sidebar .left-navigation ul li ul li ul li a {
-  text-transform: uppercase;
   color: white;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
   font-size: 13px;
@@ -54,74 +53,129 @@ body {
   background: url('../images/back.png');
   background-repeat: repeat;
 }
-.top .logo,
-.top .nav,
-.top .contacts {
+.container {
+  background-color: #1e2f33;
+}
+.container .top .logo,
+.container .top .nav,
+.container .top .contacts {
   height: 90px;
 }
-.top .logo {
+.container .top .logo {
   background: url('../images/logo.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #dd9e6f;
 }
-.top .nav {
+.container .top .nav {
   background: #525e65;
 }
-.top .nav ul {
+.container .top .nav ul {
   list-style: none;
   display: block;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-.top .nav ul li {
+.container .top .nav ul li {
   float: left;
   margin: 0 0px;
   display: block;
   height: 100%;
-  padding: 35px 20px;
   transition: background 0.25s ease-out;
 }
-.top .nav ul li a {
+.container .top .nav ul li a {
   color: #a6a9ab;
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
   text-decoration: none;
+  display: block;
+  height: 100px;
+  width: 100%;
+  padding: 35px 20px;
   transition: color 0.25s ease-out;
 }
-.top .nav ul li a:hover {
+.container .top .nav ul li a:hover {
   color: white;
 }
-.top .nav ul li .active {
+.container .top .nav ul li .active {
   color: white;
 }
-.top .nav ul li:hover {
+.container .top .nav ul li:hover {
   background-color: #1e2f33;
 }
-.top .contacts {
+.container .top .contacts {
   background: #1e2f33;
+  padding: 0 !important;
+  overflow: visible;
 }
-.top .contacts h2 {
+.container .top .contacts h2 {
   color: white;
   font-size: 15px;
   text-align: center;
   margin-top: 17px;
 }
-.main .sidebar {
-  background: #1e2f33;
-  height: 1255px;
+.container .top .contacts .social {
+  width: 100%;
+  height: 50px;
+  background: #dd9e6f;
+  position: absolute;
+  bottom: -50px;
+  z-index: 999;
 }
-.main .content {
+.container .top .contacts .social ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 47px;
+}
+.container .top .contacts .social ul li {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 5px;
+  opacity: 0.7;
+  cursor: pointer;
+  background-image: url('../images/sprites-social.png');
+  transition: opacity 0.25s ease-out;
+}
+.container .top .contacts .social ul li:hover {
+  opacity: 1;
+}
+.container .top .contacts .social ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.container .top .contacts .social .social-vk {
+  background-position: -40px;
+}
+.container .top .contacts .social .social-fb {
+  background-position: -120px;
+}
+.container .top .contacts .social .social-instagram {
+  background-position: -80px;
+}
+.container .top .contacts .social .social-mail {
+  background-position: 0px;
+}
+.container .main {
+  height: 100% !important;
+}
+.container .main .sidebar {
+  background: #1e2f33;
+  height: 100% !important;
+}
+.container .main .content {
   padding: 0;
   background: white;
 }
-.main .content .popular {
-  margin-top: 50px;
+.container .main .content .popular {
+  margin-top: 100px;
   background: white;
 }
-.main .content .popular .product-wrapper {
+.container .main .content .popular .product-wrapper {
   float: left;
   width: 33.3333%;
   height: 400px;
@@ -129,29 +183,29 @@ body {
   margin-top: 30px;
   padding: 10px;
 }
-.main .content .popular .product-wrapper .product {
+.container .main .content .popular .product-wrapper .product {
   width: 100%;
   height: 100%;
   border: 1px solid #1e2f33;
 }
-.main .content .popular .product-wrapper .product img {
+.container .main .content .popular .product-wrapper .product img {
   width: 100%;
 }
-.main .content .popular .product-wrapper .product h2,
-.main .content .popular .product-wrapper .product h3 {
+.container .main .content .popular .product-wrapper .product h2,
+.container .main .content .popular .product-wrapper .product h3 {
   text-transform: uppercase;
   text-align: center;
   margin-left: 0;
 }
-.main .content .popular .product-wrapper .product h2 {
+.container .main .content .popular .product-wrapper .product h2 {
   font-size: 19px;
   color: black;
 }
-.main .content .popular .product-wrapper .product h3 {
+.container .main .content .popular .product-wrapper .product h3 {
   font-size: 15px;
   color: #525e65;
 }
-.main .content .popular .product-wrapper .product button {
+.container .main .content .popular .product-wrapper .product button {
   width: 100%;
   height: 40px;
   margin-top: 42px;
@@ -163,10 +217,10 @@ body {
   font-size: 13px;
   transition: background 0.25s ease-out;
 }
-.main .content .popular .product-wrapper .product button:hover {
+.container .main .content .popular .product-wrapper .product button:hover {
   background: #dd9e6f;
 }
-.footer {
+.container .footer {
   background: #525e65;
   height: 100px;
 }
@@ -181,7 +235,7 @@ body {
   height: 50px;
   background: url('../images/slider/sprites.png');
   position: absolute;
-  top: 200px;
+  top: 170px;
   left: 20px;
 }
 .main .content .slider .slider-but-left {
@@ -204,7 +258,7 @@ body {
   height: 50px;
   background: url('../images/slider/sprites.png');
   position: absolute;
-  top: 200px;
+  top: 170px;
   right: 20px;
 }
 .main .content .slider .slider-but-right {
@@ -237,7 +291,7 @@ body {
 .main .content .slider ul.pagination {
   display: block;
   width: 200px;
-  margin: auto;
+  margin: 40px auto;
 }
 .main .content .slider ul.pagination li {
   display: block;
