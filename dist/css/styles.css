@@ -161,7 +161,7 @@ body {
   background-position: 0px;
 }
 .container .main {
-  height: 100% !important;
+  background: #1e2f33;
 }
 .container .main .sidebar {
   background: #1e2f33;
@@ -223,6 +223,71 @@ body {
 .container .footer {
   background: #525e65;
   height: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .social ul {
+    margin-left: 21px !important;
+  }
+  .main .content .slider .slider-but-left,
+  .main .content .slider .slider-but-left-hover,
+  .main .content .slider .slider-but-right,
+  .main .content .slider .slider-but-right-hover {
+    top: 130px !important;
+  }
+  .main .content .slider .slider-wrapper {
+    height: 331px !important;
+  }
+  .main .content .slider .slider-wrapper .slide {
+    height: 331px !important;
+  }
+  .main .content .popular {
+    margin-top: 120px !important;
+  }
+  .main .content .popular .product-wrapper .product button {
+    margin-top: 65px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    background: white !important;
+  }
+  .main .content .popular .product-wrapper .product h2 {
+    font-size: 20px !important;
+    margin-top: 50px !important;
+  }
+  .main .content .popular .product-wrapper .product h3 {
+    font-size: 13px !important;
+  }
+  .main .content .popular .product-wrapper .product button {
+    margin-top: 45px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main .content .popular {
+    margin-top: 10px !important;
+  }
+  .main .content .popular h2 {
+    text-transform: uppercase;
+  }
+  .main .content .popular .product-wrapper {
+    width: 100% !important;
+    height: 550px !important;
+    margin-top: 30px !important;
+  }
+  .main .content .popular .product-wrapper .product h2 {
+    font-size: 30px !important;
+    margin-top: 0 !important;
+  }
+  .main .content .popular .product-wrapper .product h3 {
+    font-size: 17px !important;
+  }
+  .main .content .popular .product-wrapper .product button {
+    height: 80px !important;
+    margin-top: 46px !important;
+  }
+  .main .content .popular .product-wrapper:first-child {
+    margin-top: 20px !important;
+  }
 }
 .main .content .slider {
   position: relative;

@@ -1,0 +1,112 @@
+//lg
+@media screen and (min-width: 1200px) {
+	
+}
+
+//md
+@media screen and (max-width: 1200px) {
+
+
+	// Кнопки соц. сетей
+	.social ul{
+		margin-left: 21px !important;
+	}
+
+	// Слайдер
+	.main .content .slider {
+
+		.slider-but-left, .slider-but-left-hover, .slider-but-right, .slider-but-right-hover{
+			top: 130px !important;
+		}
+
+		.slider-wrapper{
+			height: 331px !important;
+		
+			.slide{
+				height: 331px !important;
+			}
+		}
+	}
+
+	// Блок с популярными товарами
+	.main .content .popular{
+		margin-top: 120px !important;
+
+		.product-wrapper .product button{
+			margin-top: 65px !important;
+		}
+	}
+}
+
+//sm
+@media screen and (max-width: 992px) {
+	.main{
+		background: @white !important;
+	}
+
+	.main .content .popular{
+
+		.product-wrapper .product{
+			h2{
+				font-size: 20px !important;
+				margin-top: 50px !important;;
+			}
+
+			h3{
+				font-size: 13px !important;
+			}
+
+			button{
+				margin-top: 45px !important;
+			}
+		}
+	}
+}
+
+//xs
+@media screen and (max-width: 768px) {
+	// Блок с популярными товарами
+	.main .content .popular{
+		.product-wrapper{
+
+		}
+	}
+}
+
+//xs2
+@media screen and (max-width: 480px) {
+	// Блок с популярными товарами
+	.main .content .popular{
+		margin-top: 10px !important;
+
+		h2{
+			text-transform: uppercase;
+		}
+
+		.product-wrapper{
+			width: 100% !important;
+			height: 550px !important;
+			margin-top: 30px !important;
+
+			.product{
+				h2{
+					font-size: 30px !important;
+					margin-top: 0 !important;
+				}
+
+				h3{
+					font-size: 17px !important;
+				}
+
+				button{
+					height: 80px !important;
+					margin-top: 46px !important;
+				}
+			}
+
+			&:first-child{
+				margin-top: 20px !important;
+			}
+		}
+	}
+}
