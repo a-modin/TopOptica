@@ -14,17 +14,40 @@
   
   <script src="js/modernizr.js"></script>
   <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/app.js"></script>
+  
 </head>
 <body>
-  <div class="container">
+<div class="nav-fix-container hidden-sm hidden-xs" id="navFix">
+  
+  <!-- Фиксированная полоска сверху -->
+  <div class="nav-fix">
+    <div class="col-1"></div>
+    <div class="col-2">
+      <ul class="nav-fix-nav">
+        <li><a class="active" href="">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">О доставке</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="col-3 social">
+      <ul>
+        <li class="social-vk"><a href=""></a></li>
+        <li class="social-fb"><a href=""></a></li>
+        <li class="social-instagram"><a href=""></a></li>
+        <li class="social-mail"><a href=""></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="container container-main">
     <!-- Верхняя линия с логотипом и навигацией -->
     <div class="row top">
 
-      <div class="col-md-3 logo hidden-xs">
-        
-      </div>
+      <!-- Логотип -->
+      <div class="col-md-3 logo hidden-xs"></div>
 
+      <!-- Навигация -->
       <div class="col-md-6 nav hidden-xs">
         <ul>
           <li><a class="active" href="">Главная</a></li>
@@ -33,28 +56,28 @@
           <li><a href="">Контакты</a></li>
         </ul>
       </div>
-
+      
+      <!-- Контакты -->
       <div class="col-md-3 contacts hidden-sm hidden-xs">
         <h2>+7 495 123-45-67</h2>
         <h2>+7 495 123-45-67</h2>
-
+        
+        <!-- Социальные кнопки -->
         <div class="social">
-
           <ul>
             <li class="social-vk"><a href=""></a></li>
             <li class="social-fb"><a href=""></a></li>
             <li class="social-instagram"><a href=""></a></li>
             <li class="social-mail"><a href=""></a></li>
           </ul>
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Row основной части страницы -->
     <div class="row main">
+
+      <!-- Сайдбар -->
       <div class="col-md-3 sidebar hidden-sm hidden-xs">
         
         <div class="left-navigation">
@@ -245,5 +268,6 @@
       </div>
     </div>
   </div>
+  <script src="js/app.js"></script>
 </body>
 </html>
