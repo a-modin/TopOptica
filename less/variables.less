@@ -1,5 +1,4 @@
 // VARIABLES
-
 //Основные цвета
 @color1: #1e2f33;
 @color2: #dd9e6f;
@@ -12,6 +11,26 @@
 //Шрифты
 @fontFamily: 'Ubuntu Condensed', 'Roboto', sans-serif;
 @fontFamily2: 'Roboto', sans-serif;
+@fontFamily3: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// MIXINS
+
+// Дефолтный стиль для текста
+.fontDefault(){
+	font-family: @fontFamily2;
+	color: @color1;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+// Стили ссылки, помещаемой внутри блока,
+// чтобы сделать его кликабельным
+.block-link(@z){
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: @z;
+}
 
 

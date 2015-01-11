@@ -16,22 +16,24 @@
   <script src="js/jquery-2.1.1.min.js"></script>
   
 </head>
-<body>
-<div class="nav-fix-container hidden-sm hidden-xs" id="navFix">
-  
-  <!-- Фиксированная полоска сверху -->
-  <div class="nav-fix">
-    <div class="col-1"></div>
-    <div class="col-2">
-      <ul class="nav-fix-nav">
+<body class="page">
+
+
+
+<!-- Фиксированная полоска сверху -->
+<div class="top-line-fix-container hidden-sm hidden-xs" id="navFix">
+  <div class="top-line-fix">
+    <div class="top-line-fix__logo"></div>
+    <div class="top-line-fix__nav">
+      <ul>
         <li><a class="active" href="">Главная</a></li>
         <li><a href="">Каталог</a></li>
         <li><a href="">О доставке</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
     </div>
-    <div class="col-3 social">
-      <ul>
+    <div class="top-line-fix__social">
+      <ul class="social-items">
         <li class="social-vk"><a href=""></a></li>
         <li class="social-fb"><a href=""></a></li>
         <li class="social-instagram"><a href=""></a></li>
@@ -40,6 +42,11 @@
     </div>
   </div>
 </div>
+<!-- Фиксированная полоска сверху end-->
+
+
+
+
   <div class="container container-main">
     <!-- Верхняя линия с логотипом и навигацией -->
     <div class="row top">
@@ -64,7 +71,7 @@
         
         <!-- Социальные кнопки -->
         <div class="social">
-          <ul>
+          <ul class="social-items">
             <li class="social-vk"><a href=""></a></li>
             <li class="social-fb"><a href=""></a></li>
             <li class="social-instagram"><a href=""></a></li>
@@ -169,35 +176,41 @@
         </div>
       </div>
 
-      <!-- Слайдер -->
+      
       <div class="col-md-9 content">
 
-        <div class="slider hidden-xs" id="slider">
+        <!-- Слайдер -->
 
-            <div class="slider-wrapper" id="sliderWrapper">
-              <div class="slide"><img src="images/slider/slide1.jpg" alt=""></div>
-              <div class="slide"><img src="images/slider/slide2.jpg" alt=""></div>
-              <div class="slide"><img src="images/slider/slide3.jpg" alt=""></div>
-              <div class="slide"><img src="images/slider/slide4.jpg" alt=""></div>
-            </div>
+        <div class="slider-block">
+          <div class="slider hidden-xs" id="slider">
 
-            <ul class="pagination">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            
-            <div class="slider-but-left"></div>
-            <div id="butLeft" class="slider-but-left-hover"></div>
+              <div class="slider-wrapper" id="sliderWrapper">
+                <div class="slide"><img src="images/slider/slide1.jpg" alt=""></div>
+                <div class="slide"><img src="images/slider/slide2.jpg" alt=""></div>
+                <div class="slide"><img src="images/slider/slide3.jpg" alt=""></div>
+                <div class="slide"><img src="images/slider/slide4.jpg" alt=""></div>
+              </div>
 
-            <div class="slider-but-right"></div>
-            <div id="butRight" class="slider-but-right-hover"></div>
-            
+              <ul class="pagination">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              
+              <div class="slider-but-left"></div>
+              <div id="butLeft" class="slider-but-left-hover"></div>
+
+              <div class="slider-but-right"></div>
+              <div id="butRight" class="slider-but-right-hover"></div>
+          </div>
         </div>
-        <hr>
+
+        
+        <!-- Текст приветствия -->
         <div class="hello">
-          <h2>Добро пожаловать!</h2>
+
+          <h2>Добро пожаловать!</h2> <hr><br>
 
           <p>TopOptica - первый в России проект, благодаря которому Вы, сможете приобрести себе брендовую, премиальную, медицинскую или солнцезащитную оправу, не выходя из офиса, дома и т.д.
 
@@ -207,75 +220,87 @@
 
           <p>Наши цены приятно удивят Вас, а качество предлагаемой продукции не заставит задуматься над ее покупкой!</p>
         </div>
-
-        <hr class="afterSlider">
         
         <!-- Популярные товары -->
         <div class="popular">
-          <h2>Популярные товары</h2>
-          <div class="products">
+          <h2>Популярные товары</h2> <hr><br>
+          
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
 
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
 
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
 
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
 
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
 
             <div class="product-wrapper">
               <div class="product">
+                <a href=""></a>
                 <img src="images/catalog/g1.jpg" alt="">
                 <h2>MOSCHINO 1234ABC</h2>
                 <h3>Женские медицинские очки</h3>
+                <span>5000 руб.</span>
                 <button>Подробнее</button>
               </div>
             </div>
-          </div>
         </div>
+
       </div>
     </div>
 
     <!-- Footer -->
     <div class="row">
       <div class="col-md-12 footer">
-        footer
+        <span class="copy">
+          &copy; Top Optica 2015
+        </span>
       </div>
     </div>
   </div>

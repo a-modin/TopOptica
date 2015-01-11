@@ -1,82 +1,77 @@
-.main{
-	.sidebar{
-		.left-navigation{
+// Навигация в сайдбаре
+.left-navigation{
+	
+	ul{
+		padding: 0;
+		margin-left: 20px;
+		list-style: none;
+
+		.left-nav-1{
+			margin-top: 50px;
+		}
 		
+		// Заголовки меню
+		li{
+			h2{
+				text-transform: uppercase;
+				color: @white;
+				font-family: @fontFamily;
+				font-size: 15px;
+				text-align: left;
+			}
+			
+			// Список навигации первого уровня
 			ul{
+				list-style: none;
 				padding: 0;
 				margin-left: 20px;
-				list-style: none;
-
-				.left-nav-1{
-					margin-top: 50px;
-				}
 				
-				li{
-					h2{
-						text-transform: uppercase;
+				.left-nav-2{
+					margin-top: 10px;
+				}
+
+				.left-nav-opened{
+					span{
 						color: @white;
-						font-family: @fontFamily;
-						font-size: 15px;
-						text-align: left;
 					}
+				}
 
+				li{
+
+					span{
+						text-transform: uppercase;
+						color: @color4;
+						font-family: @fontFamily;
+						font-size: 13px;
+						cursor: pointer;
+
+						.transition(color, 0.25s);
+
+						&:hover{
+							color: @white;
+						}
+					}
+					
+					// Список навигации второго уровня
 					ul{
-						list-style: none;
+						display: none;
 						padding: 0;
-						margin-left: 20px;
-						
-						.left-nav-2{
-							margin-top: 10px;
-						}
-
-						.left-nav-opened{
-							span{
-								color: @white;
-							}
-						}
+						margin-left: 10px;
 
 						li{
 
-							span{
-								text-transform: uppercase;
+							a{
 								color: @color4;
 								font-family: @fontFamily;
 								font-size: 13px;
 								cursor: pointer;
 
-								.transition(color);
+								.transition(color, 0.25s);
 
 								&:hover{
 									color: @white;
 								}
-							}
 
-							ul{
-								display: none;
-								padding: 0;
-								margin-left: 10px;
-
-								li{
-
-									a{
-										// text-transform: uppercase;
-										color: @white;
-										font-family: @fontFamily;
-										font-size: 13px;
-										cursor: pointer;
-
-										-webkit-transition: color .25s ease-out;
-										   -moz-transition: color .25s ease-out;
-										    -ms-transition: color .25s ease-out;
-										     -o-transition: color .25s ease-out;
-										        transition: color .25s ease-out;
-
-										&:hover{
-											color: @white;
-										}
-
-									}
-								}
 							}
 						}
 					}
@@ -85,5 +80,3 @@
 		}
 	}
 }
-
-

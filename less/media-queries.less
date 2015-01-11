@@ -1,36 +1,43 @@
-//lg
+//////////////////////////////////////////////////
+// LG
+//////////////////////////////////////////////////
+
 @media screen and (min-width: 1200px) {
 	
 }
 
-//md
+
+
+//////////////////////////////////////////////////
+// MD
+//////////////////////////////////////////////////
+
 @media screen and (max-width: 1200px) {
 	// Фиксированная навигация
-	.nav-fix-container{
-		.nav-fix{
-			width: 970px !important;
 
-			.col-1{
-				width: 242px !important;
-			}
-
-			.col-2{
-				width: 485px !important;
-			}
-
-			.col-3{
-				width: 243px !important;
-			}
-		}
+	.top-line-fix{
+		width: 970px !important;
 	}
 
-	// Кнопки соц. сетей
-	.social ul{
+	.top-line-fix__logo{
+		width: 242px !important;
+	}
+
+	.top-line-fix__nav{
+		width: 485px !important;
+	}
+
+	.top-line-fix__social{
+		width: 243px !important;
+	}
+
+	ul.social-items{
 		margin-left: 21px !important;
 	}
 
+
 	// Слайдер
-	.main .content .slider {
+	.slider {
 
 		.slider-but-left, .slider-but-left-hover, .slider-but-right, .slider-but-right-hover{
 			top: 130px !important;
@@ -46,27 +53,33 @@
 	}
 
 	// Блок с популярными товарами
-	.main .content .popular{
-		margin-top: 120px !important;
+	.product-wrapper {
+		height: 410px !important;
 
-		.product-wrapper .product button{
-			margin-top: 65px !important;
+		.popular{
+			margin-top: 20px !important;
 		}
 	}
 }
 
-//sm
+
+
+//////////////////////////////////////////////////
+// SM
+//////////////////////////////////////////////////
+
 @media screen and (max-width: 992px) {
 	.main{
 		background: @white !important;
 	}
 
-	.main .content .popular{
+	.product-wrapper {
+		height: 430px !important;
 
-		.product-wrapper .product{
+		.product{
 			h2{
 				font-size: 20px !important;
-				margin-top: 50px !important;;
+				margin-top: 10px !important;
 			}
 
 			h3{
@@ -78,52 +91,91 @@
 			}
 		}
 	}
+
 }
 
-//xs
-@media screen and (max-width: 768px) {
-	// Блок с популярными товарами
-	.main .content .popular{
-		.product-wrapper{
 
+
+//////////////////////////////////////////////////
+// XS
+//////////////////////////////////////////////////
+
+@media screen and (max-width: 768px) {
+
+	// Блок с популярными товарами
+	.product-wrapper{
+		height: 390px !important;
+
+		.product{
+			h2{
+				font-size: 15px !important;
+			}
+
+			h3{
+				font-size: 11px !important;
+			}
+
+			span{
+				width: 70% !important;
+			}
 		}
 	}
 }
 
-//xs2
+
+
+//////////////////////////////////////////////////
+// Специально для карточек товаров
+//////////////////////////////////////////////////
+
+@media screen and (max-width: 600px) {
+
+	// Блок с популярными товарами
+	.product-wrapper{
+		height: 370px !important;
+	}
+}
+
+
+
+//////////////////////////////////////////////////
+// XS2
+//////////////////////////////////////////////////
+
 @media screen and (max-width: 480px) {
 	// Блок с популярными товарами
-	.main .content .popular{
+	.popular{
 		margin-top: 10px !important;
+	}
 
-		h2{
-			text-transform: uppercase;
+	.product-wrapper{
+		width: 100% !important;
+		height: 550px !important;
+		margin-top: 30px !important;
+
+		.product{
+
+			h2{
+				font-size: 30px !important;
+				margin-top: 0 !important;
+			}
+
+			h3{
+				font-size: 17px !important;
+			}
+
+			button{
+				height: 50px !important;
+				margin-top: 46px !important;
+			}
 		}
 
-		.product-wrapper{
-			width: 100% !important;
-			height: 550px !important;
-			margin-top: 30px !important;
-
-			.product{
-				h2{
-					font-size: 30px !important;
-					margin-top: 0 !important;
-				}
-
-				h3{
-					font-size: 17px !important;
-				}
-
-				button{
-					height: 80px !important;
-					margin-top: 46px !important;
-				}
-			}
-
-			&:first-child{
-				margin-top: 20px !important;
-			}
+		&:first-child{
+			margin-top: 20px !important;
 		}
 	}
+
 }
+
+
+

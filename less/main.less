@@ -1,174 +1,160 @@
-body{
+// Страница
+.page{
 	background: url('../images/back.png');
 	background-repeat: repeat;
 }
 
+// Основной контейнер
 .container-main{
 	background-color: @color1;
-	// Верхняя линия
-	.top{
-		.logo, .nav, .contacts{
-			height: 90px;
-		}
+}
+
+
+
+//////////////////////////////////////////////////
+// Верхняя полоска
+//////////////////////////////////////////////////
+
+.top{
+	height: 90px;
+}
+
+.logo, .nav, .contacts{
+	height: 90px;
+}
+
+.logo{
+	background: url('../images/logo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: @color2
+}
+
+.nav{
+	background: @color3;
+
+	ul{
+		list-style: none;
+		display: block;
+		height: 100%;
+		margin: 0;
+		padding: 0;
 		
-		.logo{
-			background: url('../images/logo.jpg');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-color: @color2
-		}
+		li{
+			float: left;
+			margin: 0 0px;
+			display: block;
+			height: 100%;
 
-		.nav{
-			background: @color3;
-
-			ul{
-				list-style: none;
+			a{
+				color: @color4;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-family: @fontFamily;
+				text-decoration: none;
 				display: block;
-				height: 100%;
-				margin: 0;
-				padding: 0;
-				
-				li{
-					float: left;
-					margin: 0 0px;
-					display: block;
-					height: 100%;
+				height: 100px;
+				width: 100%;
+				padding: 37px 20px;
 
-					a{
-						color: @color4;
-						text-transform: uppercase;
-						font-size: 14px;
-						font-family: @fontFamily;
-						text-decoration: none;
-						display: block;
-						height: 100px;
-						width: 100%;
-						padding: 37px 20px;
-
-						&:hover{
-							color: @white;
-						}
-
-						.transition(color);
-					}
-
-					.transition(background);
-
-					.active{
-						color: @white
-					}
-
-					&:hover{
-						background-color: @color1;
-					}
-				}
-			}
-		}
-			
-		
-		.contacts{
-			background: @color1;
-			padding: 0 !important;
-			overflow: visible;
-				
-			h2{
-				color: @white;
-				font-size: 15px;
-				text-align: center;
-				margin-top: 17px;
-			}
-
-			
-		}
-	}
-
-	// Основная часть страницы
-	.main{
-		background: @color1;
-
-		.sidebar{
-			background: @color1;
-			height: 100% !important;
-		}
-
-		.content{
-			padding: 0;
-			background: @white;
-			
-			.hello{
-				margin-top: 100px;
-				padding: 20px;
-			}
-
-			.popular{
-				margin-top: 50px;
-				background: @white;
-
-				h2{
-					margin-left: 10px;
+				&:hover{
+					color: @white;
 				}
 
-				.product-wrapper{
-					float: left;
-					width: 33.3333%;
-					height: 400px;
-					margin: 0px;
-					margin-top: 10px;
-					padding: 10px;
+				.transition(color, 0.25s);
+			}
 
-					.product{
-						width: 100%;
-						height: 100%;
-						border: 1px solid @color1;
+			.transition(background, 0.25s);
 
-						img{
-							width: 100%;
-						}
+			.active{
+				color: @white
+			}
 
-						h2, h3{
-							text-transform: uppercase;
-							text-align: center;
-						}
-
-						h2{
-							font-size: 19px;
-							color: @black;
-						}
-
-						h3{
-							font-size: 15px;
-							color: @color3;
-						}
-
-						button{
-							width: 100%;
-							height: 40px;
-							margin-top: 42px;
-							border: 0;
-							background-color: @color1;
-							color: @white;
-							text-transform: uppercase;
-							font-family: @fontFamily2;
-							font-size: 13px;
-
-							-webkit-transition: background .25s ease-out;
-							   -moz-transition: background .25s ease-out;
-							    -ms-transition: background .25s ease-out;
-							     -o-transition: background .25s ease-out;
-							        transition: background .25s ease-out;
-
-							&:hover{
-								background: @color2;
-							}
-						}
-					}
-				}
+			&:hover{
+				background-color: @color1;
 			}
 		}
-	}
-
-	.footer{
-		background: @color3;
-		height: 100px;
 	}
 }
+
+.contacts{
+	background: @color1;
+	padding: 0 !important;
+	overflow: visible;
+		
+	h2{
+		color: @white;
+		font-size: 17px !important;
+		text-align: center;
+		margin-top: 17px;
+		font-weight: normal;
+		font-family: @fontFamily2
+	}
+}
+
+.social{
+	width: 100%;
+	height: 50px;
+	background: @color2;
+	position: absolute;
+	bottom: -50px;
+	z-index: 888;
+}
+
+
+
+//////////////////////////////////////////////////
+// Основная часть страницы
+//////////////////////////////////////////////////
+
+.main{
+	background: @color1;
+}
+
+// Сайдбар
+.sidebar{
+	background: @color1;
+}
+
+// Основной блок контента
+.content{
+	padding: 0;
+	background: @white;
+}
+
+// Блок с текстом приветствия
+.hello{
+	margin-top: 30px;
+	padding: 20px;
+	float: left;
+	color: @black;
+}
+
+// Блок с популярными товарами
+.popular{
+	margin-top: 30px;
+	padding: 20px;
+	float: left;
+	background: @white;
+}
+
+//////////////////////////////////////////////////
+// Футер
+//////////////////////////////////////////////////
+
+.footer{
+	background: @color3;
+	height: 100px;
+	text-align: center;
+	padding-top: 40px;
+
+	.copy{
+		color: @color1;
+	}
+}
+
+
+
+
+
+

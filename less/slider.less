@@ -1,120 +1,124 @@
-.main .content .slider{
+//////////////////////////////////////////////////
+// Слайдер
+//////////////////////////////////////////////////
+
+.slider-block{
+	width: 100%;
+	float: left;
+}
+
+.slider{
 	position: relative;
-	background: @white;
-	margin:0;
+	background: @color2;
+	margin: 0;
+}
 
-	.slider-but-left, .slider-but-left-hover{
-		width: 50px;
-		height: 50px;
-		background: url('../images/slider/sprites.png');
+
+// Кнопки left/right
+
+.slider-but-left, .slider-but-left-hover{
+	width: 50px;
+	height: 50px;
+	background: url('../images/slider/sprites.png');
+	position: absolute;
+	top: 200px;
+	left: 20px;
+}
+
+.slider-but-left{
+	background-position: 0px;
+	z-index: 200;
+
+}
+
+.slider-but-left-hover{
+	background-position: -50px;
+	z-index: 1111;
+	opacity: 0;
+	cursor: pointer;
+
+	.transition(opacity, 0.25s);
+
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.slider-but-right, .slider-but-right-hover{
+	width: 50px;
+	height: 50px;
+	background: url('../images/slider/sprites.png');
+	position: absolute;
+	top: 200px;
+	right: 20px;
+}
+
+.slider-but-right{
+	background-position: -100px;
+	z-index: 200;
+
+}
+
+.slider-but-right-hover{
+	background-position: -150px;
+	z-index: 1111;
+	opacity: 0;
+	cursor: pointer;
+
+	.transition(opacity, 0.25s);
+
+	&:hover{
+		opacity: 1;
+	}
+}
+
+
+// Обертка слайдера
+
+.slider-wrapper{
+	width: 100%;
+	height: 400px;
+
+	.slide{
 		position: absolute;
-		top: 170px;
-		left: 20px;
-	}
-
-	.slider-but-left{
-		background-position: 0px;
-		z-index: 200;
-
-	}
-
-	.slider-but-left-hover{
-		background-position: -50px;
-		z-index: 1111;
-		opacity: 0;
-		cursor: pointer;
-
-		-webkit-transition: opacity .40s ease-out;
-		   -moz-transition: opacity .40s ease-out;
-		    -ms-transition: opacity .40s ease-out;
-		     -o-transition: opacity .40s ease-out;
-		        transition: opacity .40s ease-out;
-
-		&:hover{
-			opacity: 1;
-		}
-	}
-
-	.slider-but-right, .slider-but-right-hover{
-		width: 50px;
-		height: 50px;
-		background: url('../images/slider/sprites.png');
-		position: absolute;
-		top: 170px;
-		right: 20px;
-	}
-
-	.slider-but-right{
-		background-position: -100px;
-		z-index: 200;
-
-	}
-
-	.slider-but-right-hover{
-		background-position: -150px;
-		z-index: 1111;
-		opacity: 0;
-		cursor: pointer;
-
-		-webkit-transition: opacity .40s ease-out;
-		   -moz-transition: opacity .40s ease-out;
-		    -ms-transition: opacity .40s ease-out;
-		     -o-transition: opacity .40s ease-out;
-		        transition: opacity .40s ease-out;
-
-		&:hover{
-			opacity: 1;
-		}
-	}
-
-	.slider-wrapper{
 		width: 100%;
 		height: 400px;
+		opacity: 0;
 
-		.slide{
-			position: absolute;
+		img{
 			width: 100%;
-			height: 400px;
-			opacity: 0;
-
-			img{
-				width: 100%;
-			}
 		}
 	}
+}
 
-	ul.pagination{
+
+// Кнопки управления слайдером (pagination)
+
+ul.pagination{
+	display: block;
+	width: 200px;
+	margin: 40px auto;
+
+	li{
 		display: block;
-		width: 200px;
-		margin: 40px auto;
+		width: 30px;
+		height: 30px;
+		float: left;
+		margin: 10px;
+		cursor: pointer;
 
-		li{
-			display: block;
-			width: 30px;
-			height: 30px;
-			float: left;
-			margin: 10px;
-			cursor: pointer;
+		border: 1px solid @color3;
+		
+		.border-radius(15);
+		.transition(background-color, 0.25s);
 
-			border: 1px solid @color3;
-			-moz-border-radius: 15px;
-			-webkit-border-radius: 15px;
-			border-radius: 15px;
-
-			-webkit-transition: background .40s ease-out;
-			   -moz-transition: background .40s ease-out;
-			    -ms-transition: background .40s ease-out;
-			     -o-transition: background .40s ease-out;
-			        transition: background .40s ease-out;
-
-			&:hover{
-				background: @color3;
-			}
-			
+		&:hover{
+			background: @color3;
 		}
+		
+	}
 
-		.active{
-			background: @color1;
-		}
+	.active{
+		background: @color1;
 	}
 }
