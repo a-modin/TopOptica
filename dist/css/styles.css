@@ -11,6 +11,7 @@
   color: white;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
   font-size: 15px;
+  text-align: left;
 }
 .main .sidebar .left-navigation ul li ul {
   list-style: none;
@@ -29,7 +30,10 @@
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
   font-size: 13px;
   cursor: pointer;
-  transition: color 0.25s ease-out;
+  -webkit-transition: color;
+  -moz-transition: color;
+  -o-transition: color;
+  transition: color;
 }
 .main .sidebar .left-navigation ul li ul li span:hover {
   color: white;
@@ -44,6 +48,10 @@
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
   font-size: 13px;
   cursor: pointer;
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
 }
 .main .sidebar .left-navigation ul li ul li ul li a:hover {
@@ -82,7 +90,10 @@ body {
   margin: 0 0px;
   display: block;
   height: 100%;
-  transition: background 0.25s ease-out;
+  -webkit-transition: background;
+  -moz-transition: background;
+  -o-transition: background;
+  transition: background;
 }
 .container-main .top .nav ul li a {
   color: #a6a9ab;
@@ -94,7 +105,10 @@ body {
   height: 100px;
   width: 100%;
   padding: 37px 20px;
-  transition: color 0.25s ease-out;
+  -webkit-transition: color;
+  -moz-transition: color;
+  -o-transition: color;
+  transition: color;
 }
 .container-main .top .nav ul li a:hover {
   color: white;
@@ -127,16 +141,23 @@ body {
   padding: 0;
   background: white;
 }
-.container-main .main .content .popular {
+.container-main .main .content .hello {
   margin-top: 100px;
+  padding: 20px;
+}
+.container-main .main .content .popular {
+  margin-top: 50px;
   background: white;
+}
+.container-main .main .content .popular h2 {
+  margin-left: 10px;
 }
 .container-main .main .content .popular .product-wrapper {
   float: left;
   width: 33.3333%;
   height: 400px;
   margin: 0px;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px;
 }
 .container-main .main .content .popular .product-wrapper .product {
@@ -151,7 +172,6 @@ body {
 .container-main .main .content .popular .product-wrapper .product h3 {
   text-transform: uppercase;
   text-align: center;
-  margin-left: 0;
 }
 .container-main .main .content .popular .product-wrapper .product h2 {
   font-size: 19px;
@@ -171,6 +191,10 @@ body {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
+  -webkit-transition: background 0.25s ease-out;
+  -moz-transition: background 0.25s ease-out;
+  -ms-transition: background 0.25s ease-out;
+  -o-transition: background 0.25s ease-out;
   transition: background 0.25s ease-out;
 }
 .container-main .main .content .popular .product-wrapper .product button:hover {
@@ -185,13 +209,13 @@ body {
     width: 970px !important;
   }
   .nav-fix-container .nav-fix .col-1 {
-    width: 243px !important;
+    width: 242px !important;
   }
   .nav-fix-container .nav-fix .col-2 {
     width: 485px !important;
   }
   .nav-fix-container .nav-fix .col-3 {
-    width: 242px !important;
+    width: 243px !important;
   }
   .social ul {
     margin-left: 21px !important;
@@ -295,6 +319,10 @@ body {
   margin: 0 0px;
   display: block;
   height: 100%;
+  -webkit-transition: background 0.25s ease-out;
+  -moz-transition: background 0.25s ease-out;
+  -ms-transition: background 0.25s ease-out;
+  -o-transition: background 0.25s ease-out;
   transition: background 0.25s ease-out;
 }
 .nav-fix-container .nav-fix .col-2 ul li a {
@@ -306,7 +334,11 @@ body {
   display: block;
   height: 50px;
   width: 100%;
-  padding: 17px 20px;
+  padding: 15px 20px;
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
   transition: color 0.25s ease-out;
 }
 .nav-fix-container .nav-fix .col-2 ul li a:hover {
@@ -347,6 +379,10 @@ body {
   z-index: 1111;
   opacity: 0;
   cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
   transition: opacity 0.4s ease-out;
 }
 .main .content .slider .slider-but-left-hover:hover {
@@ -370,6 +406,10 @@ body {
   z-index: 1111;
   opacity: 0;
   cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -o-transition: opacity 0.4s ease-out;
   transition: opacity 0.4s ease-out;
 }
 .main .content .slider .slider-but-right-hover:hover {
@@ -401,7 +441,13 @@ body {
   margin: 10px;
   cursor: pointer;
   border: 1px solid #525e65;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
   border-radius: 15px;
+  -webkit-transition: background 0.4s ease-out;
+  -moz-transition: background 0.4s ease-out;
+  -ms-transition: background 0.4s ease-out;
+  -o-transition: background 0.4s ease-out;
   transition: background 0.4s ease-out;
 }
 .main .content .slider ul.pagination li:hover {
@@ -432,6 +478,10 @@ body {
   opacity: 0.7;
   cursor: pointer;
   background-image: url('../images/sprites-social.png');
+  -webkit-transition: opacity 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out;
+  -ms-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
 }
 .social ul li:hover {
@@ -462,11 +512,17 @@ h1 {
 h2 {
   color: black;
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
-  margin-left: 10px;
+  font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
+  margin-left: 0px;
+  text-align: center;
+  text-transform: uppercase;
 }
 h3 {
   color: black;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
+}
+p {
+  font-size: 17px;
+  font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
 }

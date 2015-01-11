@@ -31,9 +31,9 @@ gulp.task('less', function(){
 	.pipe(plumber())
 	.pipe(concat('styles.css'))
 	.pipe(less())
-	.pipe(autoprefixer({
-		browsers: ['last 3 versions']
-	}))
+	// .pipe(autoprefixer({
+	// 	browsers: ['last 3 versions']
+	// }))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))

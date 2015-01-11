@@ -17,6 +17,7 @@
 						color: @white;
 						font-family: @fontFamily;
 						font-size: 15px;
+						text-align: left;
 					}
 
 					ul{
@@ -43,11 +44,7 @@
 								font-size: 13px;
 								cursor: pointer;
 
-								-webkit-transition: color .25s ease-out;
-								   -moz-transition: color .25s ease-out;
-								    -ms-transition: color .25s ease-out;
-								     -o-transition: color .25s ease-out;
-								        transition: color .25s ease-out;
+								.transition(color);
 
 								&:hover{
 									color: @white;
