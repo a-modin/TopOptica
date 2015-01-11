@@ -19,8 +19,28 @@
 <body class="page">
 
 
+<!-- Мобильная навигация -->
+<div class="nav-mobile visible-xs">
+  <div class="nav-mobile__line">
+    <div class="nav-mobile__but" id="navMobileBut">
+      <div class="nav-mobile__but__line"></div>
+      <div class="nav-mobile__but__line"></div>
+      <div class="nav-mobile__but__line"></div>
+    </div>
+  </div>
 
-<!-- Фиксированная полоска сверху -->
+  <div class="nav-mobile__menu" id="navMobileMenu">
+    <ul class="nav-mobile__menu__items">
+      <li><a href="">Главная</a></li>
+      <li><a href="">Каталог</a></li>
+      <li><a href="">О доставке</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Фиксирвоанная полоса сверху -->
 <div class="top-line-fix-container hidden-sm hidden-xs" id="navFix">
   <div class="top-line-fix">
     <div class="top-line-fix__logo"></div>
@@ -42,268 +62,266 @@
     </div>
   </div>
 </div>
-<!-- Фиксированная полоска сверху end-->
 
 
+<!-- Основной контэйнер -->
+<div class="container container-main">
+  <!-- Верхняя линия с логотипом и навигацией -->
+  <div class="row top hidden-xs">
 
+    <!-- Логотип -->
+    <div class="col-md-3 logo hidden-xs"></div>
 
-  <div class="container container-main">
-    <!-- Верхняя линия с логотипом и навигацией -->
-    <div class="row top">
-
-      <!-- Логотип -->
-      <div class="col-md-3 logo hidden-xs"></div>
-
-      <!-- Навигация -->
-      <div class="col-md-6 nav hidden-xs">
-        <ul>
-          <li><a class="active" href="">Главная</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">О доставке</a></li>
-          <li><a href="">Контакты</a></li>
+    <!-- Навигация -->
+    <div class="col-md-6 nav hidden-xs">
+      <ul>
+        <li><a class="active" href="">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">О доставке</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </div>
+    
+    <!-- Контакты -->
+    <div class="col-md-3 contacts hidden-sm hidden-xs">
+      <h2>+7 495 123-45-67</h2>
+      <h2>+7 495 123-45-67</h2>
+      
+      <!-- Социальные кнопки -->
+      <div class="social">
+        <ul class="social-items">
+          <li class="social-vk"><a href=""></a></li>
+          <li class="social-fb"><a href=""></a></li>
+          <li class="social-instagram"><a href=""></a></li>
+          <li class="social-mail"><a href=""></a></li>
         </ul>
-      </div>
-      
-      <!-- Контакты -->
-      <div class="col-md-3 contacts hidden-sm hidden-xs">
-        <h2>+7 495 123-45-67</h2>
-        <h2>+7 495 123-45-67</h2>
-        
-        <!-- Социальные кнопки -->
-        <div class="social">
-          <ul class="social-items">
-            <li class="social-vk"><a href=""></a></li>
-            <li class="social-fb"><a href=""></a></li>
-            <li class="social-instagram"><a href=""></a></li>
-            <li class="social-mail"><a href=""></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row основной части страницы -->
-    <div class="row main">
-
-      <!-- Сайдбар -->
-      <div class="col-md-3 sidebar hidden-sm hidden-xs">
-        
-        <div class="left-navigation">
-          <ul>
-            <li class="left-nav-1">
-              <h2>Медицинские очки</h2>
-              <ul>
-                <li class="left-nav-2">
-                  <span>Мужские очки</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-
-                <li class="left-nav-2">
-                  <span>Женские очки</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-
-                <li class="left-nav-2">
-                  <span>Унисекс</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <li class="left-nav-1">
-              <h2>Солцезащитные очки</h2>
-
-              <ul>
-                <li class="left-nav-2">
-                  <span>Мужские очки</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-
-                <li class="left-nav-2">
-                  <span>Женские очки</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-
-                <li class="left-nav-2">
-                  <span>Унисекс</span>
-                  <ul>
-                    <li><a href="">Tom Ford</a></li>
-                    <li><a href="">Ray Ban</a></li>
-                    <li><a href="">Gucci</a></li>
-                    <li><a href="">Porsche Design</a></li>
-                    <li><a href="">Prada</a></li>
-                    <li><a href="">Armani</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-      
-      <div class="col-md-9 content">
-
-        <!-- Слайдер -->
-
-        <div class="slider-block">
-          <div class="slider hidden-xs" id="slider">
-
-              <div class="slider-wrapper" id="sliderWrapper">
-                <div class="slide"><img src="images/slider/slide1.jpg" alt=""></div>
-                <div class="slide"><img src="images/slider/slide2.jpg" alt=""></div>
-                <div class="slide"><img src="images/slider/slide3.jpg" alt=""></div>
-                <div class="slide"><img src="images/slider/slide4.jpg" alt=""></div>
-              </div>
-
-              <ul class="pagination">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              
-              <div class="slider-but-left"></div>
-              <div id="butLeft" class="slider-but-left-hover"></div>
-
-              <div class="slider-but-right"></div>
-              <div id="butRight" class="slider-but-right-hover"></div>
-          </div>
-        </div>
-
-        
-        <!-- Текст приветствия -->
-        <div class="hello">
-
-          <h2>Добро пожаловать!</h2> <hr><br>
-
-          <p>TopOptica - первый в России проект, благодаря которому Вы, сможете приобрести себе брендовую, премиальную, медицинскую или солнцезащитную оправу, не выходя из офиса, дома и т.д.
-
-          <p>На нашей странице вы сможете выбрать любую оправу по вашему вкусу. Далее, достаточно позвонить нашему менеджеру и оформить заказ, либо вызвать менеджера к себе с коллекцией оправ, при этом Вы можете оставить свои пожелания по подбору оправы специально под вас!</p>
-
-          <p>Мы поможем не только подобрать вам оправу, а также порекомендуем очковые линзы, расскажем, как правильно носить и ухаживать за очками, если это будет необходимо.</p>
-
-          <p>Наши цены приятно удивят Вас, а качество предлагаемой продукции не заставит задуматься над ее покупкой!</p>
-        </div>
-        
-        <!-- Популярные товары -->
-        <div class="popular">
-          <h2>Популярные товары</h2> <hr><br>
-          
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-
-            <div class="product-wrapper">
-              <div class="product">
-                <a href=""></a>
-                <img src="images/catalog/g1.jpg" alt="">
-                <h2>MOSCHINO 1234ABC</h2>
-                <h3>Женские медицинские очки</h3>
-                <span>5000 руб.</span>
-                <button>Подробнее</button>
-              </div>
-            </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="row">
-      <div class="col-md-12 footer">
-        <span class="copy">
-          &copy; Top Optica 2015
-        </span>
       </div>
     </div>
   </div>
-  <script src="js/app.js"></script>
+
+  <!-- Row основной части страницы -->
+  <div class="row main">
+
+    <!-- Сайдбар -->
+    <div class="col-md-3 sidebar hidden-sm hidden-xs">
+      
+      <div class="left-navigation">
+        <ul>
+          <li class="left-nav-1">
+            <h2>Медицинские очки</h2>
+            <ul>
+              <li class="left-nav-2">
+                <span>Мужские очки</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+
+              <li class="left-nav-2">
+                <span>Женские очки</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+
+              <li class="left-nav-2">
+                <span>Унисекс</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="left-nav-1">
+            <h2>Солцезащитные очки</h2>
+
+            <ul>
+              <li class="left-nav-2">
+                <span>Мужские очки</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+
+              <li class="left-nav-2">
+                <span>Женские очки</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+
+              <li class="left-nav-2">
+                <span>Унисекс</span>
+                <ul>
+                  <li><a href="">Tom Ford</a></li>
+                  <li><a href="">Ray Ban</a></li>
+                  <li><a href="">Gucci</a></li>
+                  <li><a href="">Porsche Design</a></li>
+                  <li><a href="">Prada</a></li>
+                  <li><a href="">Armani</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="col-md-9 content">
+
+      <!-- Слайдер -->
+      <div class="slider-block">
+        <div class="slider hidden-xs" id="slider">
+
+            <div class="slider-wrapper" id="sliderWrapper">
+              <div class="slide"><img src="images/slider/slide1.jpg" alt=""></div>
+              <div class="slide"><img src="images/slider/slide2.jpg" alt=""></div>
+              <div class="slide"><img src="images/slider/slide3.jpg" alt=""></div>
+              <div class="slide"><img src="images/slider/slide4.jpg" alt=""></div>
+            </div>
+
+            <ul class="pagination">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            
+            <div class="slider-but-left"></div>
+            <div id="butLeft" class="slider-but-left-hover"></div>
+
+            <div class="slider-but-right"></div>
+            <div id="butRight" class="slider-but-right-hover"></div>
+        </div>
+      </div>
+
+      
+      <!-- Текст приветствия -->
+      <div class="hello">
+
+        <h2>Добро пожаловать!</h2> <hr><br>
+
+        <p>TopOptica - первый в России проект, благодаря которому Вы, сможете приобрести себе брендовую, премиальную, медицинскую или солнцезащитную оправу, не выходя из офиса, дома и т.д.
+
+        <p>На нашей странице вы сможете выбрать любую оправу по вашему вкусу. Далее, достаточно позвонить нашему менеджеру и оформить заказ, либо вызвать менеджера к себе с коллекцией оправ, при этом Вы можете оставить свои пожелания по подбору оправы специально под вас!</p>
+
+        <p>Мы поможем не только подобрать вам оправу, а также порекомендуем очковые линзы, расскажем, как правильно носить и ухаживать за очками, если это будет необходимо.</p>
+
+        <p>Наши цены приятно удивят Вас, а качество предлагаемой продукции не заставит задуматься над ее покупкой!</p>
+      </div>
+      
+      <!-- Популярные товары -->
+      <div class="popular">
+        <h2>Популярные товары</h2> <hr><br>
+        
+        <div class="products">
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+
+          <div class="product-wrapper">
+            <div class="product">
+              <a href=""></a>
+              <img src="images/catalog/g1.jpg" alt="">
+              <h2>MOSCHINO 1234ABC</h2>
+              <h3>Женские медицинские очки</h3>
+              <span>5000 руб.</span>
+              <button>Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="row">
+    <div class="col-md-12 footer">
+      <span class="copy">
+        &copy; Top Optica 2015
+      </span>
+    </div>
+  </div>
+
+</div>
+<script src="js/app.js"></script>
 </body>
 </html>

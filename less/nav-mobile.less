@@ -1,0 +1,66 @@
+// Мобильная навигация 
+
+.nav-mobile{
+	width: 100%;
+	position: fixed;
+	background: @color1;
+	z-index: 1050;
+}
+
+.nav-mobile__line{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background: @color1;
+	border-bottom: 1px solid @color3;
+	z-index: 1040;
+}
+
+.nav-mobile__but{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	float: right;
+	cursor: pointer;
+}
+
+.nav-mobile__but__line{
+	width: 30px;
+	height: 1px;
+	background: @white;
+	margin-top: 12px;
+	margin-left: 9px;
+	float: left;
+}
+
+.nav-mobile__menu{
+	width: 100%;
+	background: @color1;
+	float: left;
+	color: @color4;
+	position: absolute;
+	top: -250px;
+	z-index: 1030;
+}
+
+.nav-mobile__menu__items{
+	list-style: none;
+	padding: 0;
+
+	li{
+		display: block;
+		margin-top: 5px;
+		text-align: center;
+
+		a{
+			text-transform: uppercase;
+			color: @white;
+			font-size: 15px;
+			font-family: @fontFamily2;
+			text-decoration: none;
+			display: block;
+			height: 50px;
+			padding-top: 17px
+		}
+	}
+}
