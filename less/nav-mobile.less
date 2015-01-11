@@ -3,7 +3,6 @@
 .nav-mobile{
 	width: 100%;
 	position: fixed;
-	background: @color1;
 	z-index: 1050;
 }
 
@@ -41,6 +40,7 @@
 	position: absolute;
 	top: -250px;
 	z-index: 1030;
+	border-bottom: 5px solid @color2;
 }
 
 .nav-mobile__menu__items{
@@ -51,6 +51,7 @@
 		display: block;
 		margin-top: 5px;
 		text-align: center;
+		border-bottom: 1px solid @color3;
 
 		a{
 			text-transform: uppercase;
@@ -63,4 +64,18 @@
 			padding-top: 17px
 		}
 	}
+}
+
+.nav-mobile__menu__close{
+	height: 50px;
+
+	.nav-mobile__menu__close__but{
+		width: 38px;
+		height: 50px;
+		background-image: url('../images/sprites-light.png');
+		background-position: -200px;
+		margin: auto;
+		cursor: pointer;
+	}
+	
 }

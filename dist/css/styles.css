@@ -345,7 +345,6 @@
 .nav-mobile {
   width: 100%;
   position: fixed;
-  background: #1e2f33;
   z-index: 1050;
 }
 .nav-mobile__line {
@@ -379,6 +378,7 @@
   position: absolute;
   top: -250px;
   z-index: 1030;
+  border-bottom: 5px solid #dd9e6f;
 }
 .nav-mobile__menu__items {
   list-style: none;
@@ -388,6 +388,7 @@
   display: block;
   margin-top: 5px;
   text-align: center;
+  border-bottom: 1px solid #525e65;
 }
 .nav-mobile__menu__items li a {
   text-transform: uppercase;
@@ -398,6 +399,17 @@
   display: block;
   height: 50px;
   padding-top: 17px;
+}
+.nav-mobile__menu__close {
+  height: 50px;
+}
+.nav-mobile__menu__close .nav-mobile__menu__close__but {
+  width: 38px;
+  height: 50px;
+  background-image: url('../images/sprites-light.png');
+  background-position: -200px;
+  margin: auto;
+  cursor: pointer;
 }
 .product-wrapper {
   float: left;

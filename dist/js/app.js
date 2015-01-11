@@ -67,6 +67,11 @@ $('#navMobileBut').click(function() {
 		navMobileStatus = false;
 		$('#navMobileMenu').stop().animate({top: '-250px'}, 500)
 	}
+
+	$('#navMobileClose').click(function() {
+		navMobileStatus = false;
+		$('#navMobileMenu').stop().animate({top: '-250px'}, 500)
+	});
 });
 
 //////////////////////////////////////////////////////////////////////
