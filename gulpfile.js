@@ -10,19 +10,12 @@ var gulp = require('gulp'),
 	validate = require('gulp-w3cjs'),
 	connect = require('gulp-connect');
 
-// Минификация HTML
-gulp.task('htmlmin', function() {
-	var opts = {comments: false, spare: true};
-	
-	gulp.src('*.html')
-	// .pipe(htmlmin(opts)) // Раскоментировать, если нужна минификация HTML
-	.pipe(gulp.dest('./dist'))
+// Валидация и перемещение HTML
+gulp.task('html', function() {
+	gulp.src('templates/*.html')
+	.pipe(validate())
+	.pipe(gulp.dest('dist'))
 	.pipe(connect.reload())
-});
-
-gulp.task('validate', function () {
-    gulp.src('*.html')
-        .pipe(validate());
 });
 
 // Компиляция lESS в CSS, переименование и минификация
@@ -31,9 +24,6 @@ gulp.task('less', function(){
 	.pipe(plumber())
 	.pipe(concat('styles.css'))
 	.pipe(less())
-	// .pipe(autoprefixer({
-	// 	browsers: ['last 3 versions']
-	// }))
 	.pipe(gulp.dest('dist/css'))
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))
@@ -55,8 +45,7 @@ gulp.task('jsmin', function() {
 
 gulp.task('watch', function(){
 	gulp.watch('less/*.less',['less']);
-	gulp.watch('*.html',['validate']);
-	gulp.watch('*.html',['htmlmin']);
+	gulp.watch('templates/*.html',['html']);
 	gulp.watch('js/*js',['jsmin']);
 });
 
@@ -69,5 +58,5 @@ gulp.task('connect', function(){
 });
 
 
-gulp.task('default', ['htmlmin', 'validate', 'less', 'jsmin', 'watch', 'connect']);
+gulp.task('default', ['html', 'less', 'jsmin', 'watch', 'connect']);
 
