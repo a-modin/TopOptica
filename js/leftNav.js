@@ -2,6 +2,10 @@
 // Навигация в сайдбаре
 //////////////////////////////////////////////////////////////////////
 
+$(".left-nav-2").children("a").click(function(e){
+	e.preventDefault()
+});
+
 $('.left-nav-2').click(function() {
 	var toggleOptons = {
 		duration: 300,
@@ -27,9 +31,4 @@ $('.left-nav-2').click(function() {
 	}
 
 	$('.left-nav-closed ul').hide(300);
-	
-
-
 });
-
-

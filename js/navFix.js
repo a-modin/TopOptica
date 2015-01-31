@@ -13,5 +13,3 @@ window.onscroll = function() {
 		$('#navFix').css('display', 'block');
 	};
 }
-
-

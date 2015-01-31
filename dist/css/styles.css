@@ -61,7 +61,7 @@
 .left-navigation ul .left-nav-1 {
   margin-top: 50px;
 }
-.left-navigation ul li h2 {
+.left-navigation ul li a {
   text-transform: uppercase;
   color: white;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
@@ -76,10 +76,10 @@
 .left-navigation ul li ul .left-nav-2 {
   margin-top: 10px;
 }
-.left-navigation ul li ul .left-nav-opened span {
+.left-navigation ul li ul .left-nav-opened a {
   color: white;
 }
-.left-navigation ul li ul li span {
+.left-navigation ul li ul li a {
   text-transform: uppercase;
   color: #a6a9ab;
   font-family: 'Ubuntu Condensed', 'Roboto', sans-serif;
@@ -90,7 +90,7 @@
   -o-transition: color 0.25s;
   transition: color 0.25s;
 }
-.left-navigation ul li ul li span:hover {
+.left-navigation ul li ul li a:hover {
   color: white;
 }
 .left-navigation ul li ul li ul {
@@ -177,11 +177,11 @@
 .nav ul li a:hover {
   color: white;
 }
-.nav ul li .active {
-  color: white;
-}
 .nav ul li:hover {
   background-color: #1e2f33;
+}
+.nav ul li.active a {
+  color: white;
 }
 .contacts {
   background: #1e2f33;
@@ -407,11 +407,11 @@
 .top-line-fix__nav ul li a:hover {
   color: white;
 }
-.top-line-fix__nav ul li .active {
-  color: white;
-}
 .top-line-fix__nav ul li:hover {
   background-color: #1e2f33;
+}
+.top-line-fix__nav ul li.active a {
+  color: white;
 }
 .top-line-fix__social {
   position: relative !important;

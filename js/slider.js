@@ -135,13 +135,9 @@ s1.init();
 $('#butLeft').click(function() {
 	s1.stop();
 	s1.prev();
-	
 });
 
 $('#butRight').click(function() {
 	s1.stop();
 	s1.next();
-	
 });
-
-
