@@ -649,11 +649,14 @@
 }
 ul.pagination {
   display: block;
-  width: 200px;
+  width: 100%;
   margin: 40px auto;
+  text-align: center;
+  position: relative;
 }
 ul.pagination li {
   display: block;
+  text-align: center;
   width: 30px;
   height: 30px;
   float: left;

@@ -86,10 +86,11 @@ var Slider = function(elem){
 	this.__defineGetter__('slidesAmount', function(){
 		return this.slides.length;
 	});
+}
 
 
 	// Метод активации какого-либо слайда и деактивации всех остальных
-	this.slideActive = function(num){
+	Slider.prototype.slideActive = function(num){
 		this.activeSlide = this.slides[num];
 		this.activePag = this.pagination[num];
 
@@ -103,7 +104,7 @@ var Slider = function(elem){
 	}
 
 	// Присваиваем всем кнопкам ID и добавляем их в массив Slider.pagination
-	this.paginationPush = function(){
+	Slider.prototype.paginationPush = function(){
 		var arr = [];
 		var i = -1;
 
@@ -117,7 +118,7 @@ var Slider = function(elem){
 	}
 
 	// Присваиваем всем слайдам ID и добавляем их в массив Slider.slides
-	this.slidesPush = function(){
+	Slider.prototype.slidesPush = function(){
 		var arr = [];
 		var i = -1;
 		$(this.element + " #sliderWrapper .slide").each(function(indx){
@@ -131,7 +132,7 @@ var Slider = function(elem){
 
 	// Связываем слайды с кнопками 
 	// (при клике на кнопку активация соответствующего слайда)
-	this.binding = function(){
+	Slider.prototype.binding = function(){
 		var s = this;
 		var f = function(obj, num){
 			$(obj.pagination[num]).click(function(){
@@ -147,7 +148,7 @@ var Slider = function(elem){
 		}
 	}
 
-	this.next = function(){
+	Slider.prototype.next = function(){
 		if (this.active < this.slidesAmount - 1) {
 			this.active += 1;
 			this.slideActive(this.active);
@@ -160,7 +161,7 @@ var Slider = function(elem){
 
 	}
 
-	this.prev = function(){
+	Slider.prototype.prev = function(){
 		if (this.active > 0) {
 			this.active -= 1;
 			this.slideActive(this.active);
@@ -172,15 +173,14 @@ var Slider = function(elem){
 		}
 	}
 
-	this.autoPlay = function(){
+	Slider.prototype.autoPlay = function(){
 		if (this.auto === true) {
 			this.stopped = false;
 			this.timer = setInterval(this.next.bind(this), this.interval || 2000)
 		};
 	}
 
-	this.stop = function(){
-		console.log(this.stopped);
+	Slider.prototype.stop = function(){
 		clearInterval(this.timer);
 
 		if (this.auto === true && this.stopped === false) {
@@ -190,14 +190,34 @@ var Slider = function(elem){
 	}
 
 	// Иницилизация
-	this.init = function(){
+	Slider.prototype.init = function(){
 		this.slidesPush(); 
 		this.paginationPush();
 		this.binding();
 		this.slideActive(this.active);
 		this.autoPlay();
+		this.pagCSS();
 	}
-}
+
+	Slider.prototype.pagCSS = function(){
+		var slider = this		
+		var widthCalc = function(){
+			var sliderWidth = $(slider.element).css('width') // ширина контейнера слайдера
+			var slidesCount = slider.slides.length // количество слайдов
+			var pagMar = parseInt($(slider.element + " .pagination li").css('margin')) // margin одного pag
+			var pagWidth = parseInt($(slider.element + " .pagination li").css('width')) + (pagMar * 2) // ширина одного pag li
+			var pags = $(slider.element + " .pagination") // ul, внутри которого pags
+			var pagsWidth = (pagWidth * slidesCount) // считаем, чему будет равна ширина pagination ul
+			pags.css('width', pagsWidth)
+		}
+		widthCalc();
+		window.onresize = function(event) {	
+			widthCalc();
+		};
+	}
+
+	
+
 
 var s1 = new Slider('#slider');
 s1.init();
